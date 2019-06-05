@@ -1,0 +1,47 @@
+body {
+    font-size: 14px;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.custom-nav li {
+    display: inline-block;
+    padding: 5px;
+    padding-right: 10px; 
+}
+
+.custom-nav {
+    background-color: #222222;
+    line-height: 20px;
+}
+
+.custom-nav a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.custom-nav a:hover{
+    color: white;
+
+}
+.fa {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+}
+
+.title {
+    font-size: 22px;
+    letter-spacing: 1.1px;
+}
+.title.talk {
+    color: #ffffff;
+
+}
+
+.title.quote {
+    color: #aaa;
+}
+
+.title.podcast {
+    color: yellow;
+}

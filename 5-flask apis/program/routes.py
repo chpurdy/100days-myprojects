@@ -48,3 +48,17 @@ def get_poke_colors(color):
         pokemon.append(i['name'])
 
     return pokemon
+
+@app.route('/iss',methods=['POST','GET'])
+def iss():
+    location_url = ""
+    if request.method == 'POST':
+        location_url = get_iss_loc()
+    return render_template('iss.html',location_url=location_url)
+
+def get_iss_loc():
+    r = requests.get('http://api.open-notify.org/iss-now.json')
+    data = r.json()
+    lat = data['iss_position']['latitude']
+    lon = data['iss_position']['longitude']
+    return f"https://www.latlong.net/c/?lat={lat}&long={lon}"

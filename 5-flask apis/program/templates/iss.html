@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>International Space Station Location</h1>
+    <div>
+        <form class="mui-form" method="POST" action="/iss">
+        <button type="submit" class="mui-btn mui-btn-raised" value="Submit">Where Is It?</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div>
+        {% if location_url %}
+        <a href="{{location_url}}">Here it is!</a>
+        {% endif %}
+    </div>
+
+{% endblock %}

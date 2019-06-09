@@ -40,12 +40,18 @@ def pokemon():
 
 
 def get_poke_colors(color):
-    r = requests.get(f"https://pokeapi.co/api/v2/pokemon-color/{color.lower()}")
-    pokedata = r.json()
+    try:
+        r = requests.get(f"https://pokeapi.co/api/v2/pokemon-color/{color.lower()}")
+        pokedata = r.json()
+    except:
+        return ['Invalid Color']
     pokemon = []
 
     for i in pokedata['pokemon_species']:
-        pokemon.append(i['name'])
+        pr = requests.get(i['url']).json()
+        shape = pr['shape']['name']
+
+        pokemon.append((i['name'],shape))
 
     return pokemon
 

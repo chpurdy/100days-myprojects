@@ -18,12 +18,15 @@
             <thead>
                 <tr>
                     <th>Pokemon</th>
+                    <th>Shape</th>
                 </tr>
             </thead>
             <tbody>
                 {% for i in pokemon %}
                     <tr>
-                        <td>{{ i }}</td>
+                        <td>{{ i[0] }}</td>
+                        <td>{{ i[1] }}</td>
+
                     </tr>
                 {% endfor %}
             </tbody>

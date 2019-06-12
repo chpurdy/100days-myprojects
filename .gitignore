@@ -7,3 +7,6 @@
 3-apistar/__pycache__/app.cpython-37.pyc
 3-apistar/__pycache__/test_app.cpython-37-PYTEST.pyc
 5-flask apis/__pycache__/demo.cpython-37.pyc
+6-async-webcrawl/venv
+6-async-webcrawl/.vscode
+.gitignore

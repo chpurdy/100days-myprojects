@@ -13,7 +13,7 @@ basemap==1.2.0
 Beaker==1.10.1
 beautifulsoup4==4.7.1
 black==19.3b0
-bleach==3.1.0
+bleach==3.1.4
 Brlapi==0.7.0
 btrfsutil==1.1.1
 buildozer==0.39

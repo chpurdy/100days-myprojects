@@ -19,7 +19,7 @@ btrfsutil==1.1.1
 buildozer==0.39
 CacheControl==0.12.5
 cairocffi==1.0.2
-CairoSVG==2.3.1
+CairoSVG==2.5.1
 cffi==1.12.3
 chardet==3.0.4
 chrome-gnome-shell==0.0.0

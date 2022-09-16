@@ -66,7 +66,7 @@ lockfile==0.12.2
 louis==3.9.0
 lutris==0.5.2.1
 lxml==4.3.3
-Mako==1.0.11
+Mako==1.2.2
 mallard-ducktype==1.0.1
 Markdown==3.1.1
 MarkupSafe==1.1.1
